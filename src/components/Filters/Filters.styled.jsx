@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const FiltersDiv = styled.div`
   width: 100%;
-  padding: 2rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 `;

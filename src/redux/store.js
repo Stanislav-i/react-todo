@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { notesReducer } from './addNoteSlice';
-// import { filterReducer } from './filterSlice';
+import { filterReducer } from './filterSlice';
 
 import {
   persistStore,
@@ -22,7 +22,7 @@ const NotesPersistConfig = {
 export const store = configureStore({
   reducer: {
     notes: persistReducer(NotesPersistConfig, notesReducer),
-    // filter: filterReducer,
+    filter: filterReducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({

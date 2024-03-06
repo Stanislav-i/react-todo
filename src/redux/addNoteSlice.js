@@ -1,7 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-// import defaultContacts from '../data/defaultContacts';
-
 const initialState = {
   data: [],
 };
@@ -14,17 +12,12 @@ export const notesSlice = createSlice({
       state.data.push(action.payload);
     },
     deleteNote: (state, action) => {
-      const index = state.data.findIndex(
-        note => note.id === action.payload
-      );
+      const index = state.data.findIndex(note => note.id === action.payload);
       state.data.splice(index, 1);
-      // state.filter(contact => contact.id !== action.payload)
     },
     completeNote: (state, action) => {
-        const index = state.data.findIndex(
-            note => note.id === action.payload
-          ); 
-            state.data[index].completed = !state.data[index].completed;   
+      const index = state.data.findIndex(note => note.id === action.payload);
+      state.data[index].completed = !state.data[index].completed;
     },
   },
 });

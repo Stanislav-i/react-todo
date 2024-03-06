@@ -1,20 +1,14 @@
+import { Container } from "./Container";
+import Header from "./Header/Header";
 import Noteimput from "./Noteimput/Noteimput";
 import NotesList from "./NotesList/NotesList";
 
 export const App = () => {
   return (
-    <div
-      style={{
-        // height: '100vh',
-        // display: 'flex',
-        // justifyContent: 'center',
-        // alignItems: 'center',
-        // fontSize: 40,
-        // color: '#010101'
-      }}
-    >
+      <Container>
+      <Header />
       <Noteimput />
       <NotesList />
-    </div>
+      </Container>
   );
 };

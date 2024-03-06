@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const NotesList = styled.div`
+export const NotesUl = styled.ul`
 
 `
 export const NoteDiv = styled.li`
@@ -8,7 +8,6 @@ export const NoteDiv = styled.li`
     align-items: center;
     gap: 15px;
     margin-bottom: 10px;
-    cursor: pointer;
 `
 
 export const NoteText = styled.div`
@@ -17,7 +16,8 @@ export const NoteText = styled.div`
     padding-left: 5px;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: #3798ff;
+    background-color: #ffffff;
+    cursor: pointer;
 `
 
 export const NoteTextCompleted = styled.div`
@@ -28,4 +28,5 @@ export const NoteTextCompleted = styled.div`
     border-radius: 5px;
     text-decoration: line-through;
     background-color: #37ff73;
+    cursor: pointer;
 `
