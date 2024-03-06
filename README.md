@@ -18,4 +18,3 @@ Simple task manager built with React/Redux and Styled Components
 ### Frameworks:
 
 [![Styled-Components](https://img.shields.io/static/v1?label=&message=Styled-Components&color=orange)](https://)
-[![Swiper](https://img.shields.io/static/v1?label=&message=Swiper&color=orange)](https://)
